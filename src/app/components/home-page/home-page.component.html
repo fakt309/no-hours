@@ -1,0 +1,139 @@
+<div class="page page_first">
+	<div class="content1">
+		<div class="column">
+			<div class="row">
+				<h1 class="title1">БЕЗ ЧАСОВ</h1>
+			</div>
+			<h2 class="text1 margin-top margin-bottom">отказ от использования:</h2>
+			<div class="row">
+				<div class="icon1 icon_cross"></div>
+				<h2 class="text1 margin-left">часов</h2>
+			</div>
+			<div class="row">
+				<div class="icon1 icon_cross"></div>
+				<h2 class="text1 margin-left">минут</h2>
+			</div>
+			<div class="row">
+				<div class="icon1 icon_cross"></div>
+				<h2 class="text1 margin-left">часовых поясов</h2>
+			</div>
+		</div>
+		<div class="column column_watch">
+			<div class="watch">
+				<div class="watch__time">{{ currentTime$ | async }}<!-- <span class="text-ks">кСек</span>--></div>
+				<div class="watch__date">{{ getCurrentDate() | date:'dd.LL.YY' }}</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page page_second">
+	<div class="content2">
+		<div class="content3">
+			<div class="row margin-bottom">
+				<div class="title2">Почему часы и минуты?</div>
+				<div class="line1 margin"></div>
+			</div>
+			<div class="text2">
+				Данный счёт времени достался нам по наследию от наших предков. Если говорить грубо, то вероятнее всего какой-то один человек решил, что это будет удобно, если каждая более крупная единица будет равняться 60 мелким. Но нет. Так как мы используем десятичную систему счисления, удобнее, чтобы более крупная единица равнялась числу кратному десяти. Например, как это сделано во всех остальных единицах - по 1000. И даже приставки каждой единицы уже придуманы кило-, мега-, гига-, тера и т.д. Каждая более крупная единица содержит 1000 мелких. Как вариант, это очень удобно и уже давно стандартизированно.
+			</div>
+			<div class="row margin-top">
+				<div class="title2">Почему часовые пояса?</div>
+				<div class="line1 margin"></div>
+			</div>
+			<div class="text2 margin-top">
+				Каждый человек замерял время относительно солнца. И соответвенно, люди живущие в разных городах по разному считали свое время. Это продолжалось веками. И до сих пор продолжается. Мы придумали специальные стандарты времени, для того, чтобы время совпадало с восходом солнца. Это было удобно долгие годы. Но сейчас пришло время глобализации и когда ты в очередной раз смотришь во сколько начнётся твой любимый матч или презентация нового айфон, ты очень долго пытаешься понять по какому часовому поясу указано время и переводишь на свой часовой пояс, а еще нужно учесть не только время, но и возможную смену даты. Короче говоря, время - едино и протикает в любой точке пространства одинакого относительно тех, кто живёт на планете Земля. Поэтому единствено правильное решение - принять единое время. И отсчёт времени станет намного проще. Все эти ненужные конструкции слишком сильно нагружают и без того сложные вычисления.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page page_third">
+	<div class="content1">
+		<div class="column center">
+			<h1 class="title1 margin-bottom">Решение</h1>
+			<h2 class="text1 margin-bottom">Записывать время только в секундах</h2>
+			<br/><br/>
+			<h2 class="text1">
+				<span class="color1">14:34:26</span><br/><br/>
+				<span class="color2">14*60*60 + 34*60 + 26</span><br/><br/>
+				<span class="color3">52466 секунд</span><br/><br/>
+				<span class="color4">52.466 килосекунд</span><br/><br/>
+				<span class="color5">52.5 килосекунд</span>
+			</h2>
+		</div>
+	</div>
+</div>
+
+<div class="page page_fourth">
+	<div class="content4">
+		<div class="content3">
+			<div class="column center">
+				<h1 class="title3 margin-bottom">Второе решение</h1>
+				<h2 class="text3 margin-bottom">Использовать только один часовой пояс</h2>
+				<br/><br/>
+				<h2 class="title3">UTC-2</h2>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page page_fifth">
+	<div class="content3 center">
+		<div class="title1 margin-bottom">Время изменилось</div>
+		<div class="text1 margin-top">Теперь время считать так легко. И зачем эти люди придумали такие сложные ненужные вещи.</div>
+	</div>
+</div>
+
+<div class="page page_sixth">
+	<div class="content5">
+		<div class="column">
+			<div class="one">1</div>
+		</div>
+		<div class="column flex-1">
+			<div class="title4">Внесистемные единицы измерения</div>
+			<div class="text3 margin-top">Часы и минуты - это внесистемные единицы измерения. Основные СИ и СГС не принимают такие единицы. Так почему мы - адекватные люди должны их принимать?</div>
+			<div class="text3 margin-top">Внесистемные единицы нужно использовать тогда, когда в этом есть осмысленность.</div>
+			<div class="text3 margin-top">Например год и сутки привязаны к пиродам обращения Земли вокруг солнца и вокруг себя. 1 атмосфера привязана к давлению создаваемому атмосферой Земли. И т.д. Такие единицы очень удобно использовать для понимания.</div>
+			<div class="text3 margin-top">Но какой смысл несёт в себе час или минута. Что такого волшебного происходит за это время, что мы должны брать её как за единицу?</div>
+			<div class="text3 margin-top">Очевидно, мало того, что эти две внесистемные единицы не нужны вовсе, так мы еще и используем их абсолютно везде. Абсурд.</div>
+		</div>
+	</div>
+</div>
+
+<div class="page page_seven">
+	<div class="content3 center">
+		<div class="title1">Примеры использования</div>
+	</div>
+</div>
+
+<div class="page page_eight">
+	<div class="content2">
+		<div class="content3">
+			<div class="text3 margin-top margin-bottom"> - Школьный урок может равняться 2.5 килоСек (~ 41.5 минуты)</div>
+			<div class="text3 margin-top margin-bottom"> - Пара может равняться 5 килоСек (~ 83.3 минуты)</div>
+			<div class="text3 margin-top margin-bottom"> - Перемена 0.5 или 1 килоСек (~ 8 и 16 мин соответственно)</div>
+		</div>
+	</div>
+</div>
+
+<div class="page page_nine">
+	<div class="content3 center justify-content-center">
+		<div class="text1 margin text_watch-slide">Часы, которые показывают время в секундах</div>
+		<div class="watch1 margin"></div>
+		<div class="watch2 margin"></div>
+		<div class="watch3 margin"></div>
+	</div>
+</div>
+
+<div class="page page_ten">
+	<div class="content3 center">
+		<div class="beresta margin"></div>
+		<a class="link1 margin" target="_blank" href="https://beresta.app">beresta.app</a>
+		<div class="text1 margin">Первое приложение, которое использует данный формат времени</div>
+		<br/>
+		<div class="text1 margin">Присоединяйся! Чтобы добавить сюда свой продукт или любое другое предложение, пишите мне:</div>
+		<a class="link1 margin" target="_blank" href="https://twitter.com/notifications">x.com: @vgaidadei</a>
+		<a class="link1 margin" target="_blank" href="https://www.instagram.com/vgaidadei/">instagram: @vgaidadei</a>
+	</div>
+</div>

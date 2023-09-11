@@ -1,0 +1,406 @@
+.page {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.page_first {
+	position: sticky;
+	height: calc(100vh - 0px);
+	top: 0px;
+	background-color: #000000;
+	z-index: 1;
+}
+
+.page_second {
+	position: sticky;
+	height: calc(100vh - 10px);
+	top: 10px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/assets/back1.png);
+	z-index: 2;
+}
+
+.page_third {
+	position: sticky;
+	height: calc(100vh - 20px);
+	top: 20px;
+	background-color: #000000;
+	z-index: 3;
+}
+
+.page_fourth {
+	position: sticky;
+	height: calc(100vh - 30px);
+	top: 30px;
+	background-color: #000000;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/assets/back2.png);
+	z-index: 4;
+}
+
+.page_fifth {
+	position: sticky;
+	height: calc(100vh - 40px);
+	top: 40px;
+	background-color: #000000;
+	z-index: 5;
+}
+
+.page_sixth {
+	position: sticky;
+	height: calc(100vh - 50px);
+	top: 50px;
+	background: linear-gradient(34deg, #bdbdbd, #ffffff);
+	z-index: 6;
+}
+
+.page_seven {
+	position: sticky;
+	height: calc(100vh - 60px);
+	top: 60px;
+	background-color: #000000;
+	z-index: 7;
+}
+
+.page_eight {
+	position: sticky;
+	height: calc(100vh - 70px);
+	top: 70px;
+	background-color: #ffffff;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/assets/back3.png);
+	z-index: 8;
+}
+
+.page_nine {
+	position: sticky;
+	height: calc(100vh - 60px);
+	top: 60px;
+	background-color: #000000;
+	z-index: 9;
+}
+
+.page_ten {
+	position: sticky;
+	height: calc(100vh - 60px);
+	top: 60px;
+	background-color: #473c33;
+	z-index: 10;
+}
+
+.link1 {
+	font-size: 20px;
+	color: #ffffff;
+	transition: color ease 0.2s;
+	text-decoration: underline;
+}
+
+.link1:hover {
+	color: #ffffff99;
+}
+
+.beresta {
+	width: 200px;
+	height: 200px;
+	box-shadow: 0px 0px 20px #00000033;
+	border-radius: 40px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(/assets/beresta.png);
+}
+
+.watch1, .watch2, .watch3 {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.watch1 {
+	transform: translateX(0px);
+	background-image: url(/assets/watch1.png);
+}
+
+.watch2 {
+	transform: translateX(-400px);
+	background-image: url(/assets/watch2.png);
+}
+
+.watch3 {
+	transform: translateX(350px);
+	background-image: url(/assets/watch3.png);
+}
+
+.one {
+	font-size: 400px;
+	font-family: monospace;
+}
+
+.content1 {
+	margin: 0px 5%;
+	max-width: 1000px;
+	max-height: 600px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.content2 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #ffffffcc;
+	backdrop-filter: blur(0px);
+}
+
+.content3 {
+	margin: 0px 5%;
+	max-width: 1000px;
+	max-height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.content4 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #ffffff99;
+	backdrop-filter: blur(0px);
+}
+
+.content5 {
+	margin: 0px 5%;
+	max-width: 1000px;
+	max-height: 600px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.logo1 {
+	width: 100px;
+	height: 100px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(/assets/logo.png);
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.column_watch {
+	align-self: stretch;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.title1 {
+	margin: 0px;
+	color: #ffffff; // #74cb47
+	font-size: 40px;
+}
+
+.title2 {
+	color: #000000;
+	font-size: 18px;
+}
+
+.title3 {
+	margin: 0px;
+	color: #000000;
+	font-size: 40px;
+}
+
+.title4 {
+	color: #000000;
+	font-size: 26px;
+}
+
+.line1 {
+	height: 1px;
+	flex: 1;
+	background-color: #000000;
+}
+
+.subtitle1 {
+	margin: 0px;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+.watch {
+	max-width: 500px;
+	max-height: 500px;
+	min-width: 400px;
+	min-height: 400px;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url(/assets/watch.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.watch__time {
+		margin-left: -5%;
+		color: #74cb47;
+		font-size: 80px;
+		font-family: DSDIGI;
+	}
+
+	.watch__date {
+		margin-left: -2%;
+		color: #ffffff;
+		font-size: 30px;
+		font-family: DSDIGI;
+	}
+
+	.text-ks {
+		font-family: monospace;
+		font-size: 20px;
+		color: #ffffff;
+	}
+}
+
+.icon1 {
+	width: 30px;
+	height: 30px;
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.icon_cross {
+	background-image: url(/assets/cross.svg);
+}
+
+.text1 {
+	margin: 0px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.text2 {
+	margin: 0px;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 100;
+}
+
+.text3 {
+	margin: 0px;
+	color: #000000;
+	font-size: 18px;
+}
+
+.text_watch-slide {
+	transform: translateY(-200px);
+}
+
+.margin {
+	margin: 10px;
+}
+
+.margin-left {
+	margin-left: 10px;
+}
+
+.margin-right {
+	margin-right: 10px;
+}
+
+.margin-top {
+	margin-top: 10px;
+}
+
+.margin-bottom {
+	margin-bottom: 10px;
+}
+
+.center {
+	align-items: center;
+	text-align: center;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.color1 {
+	color: #f44336;
+}
+
+.color2 {
+	color: #f49536;
+}
+
+.color3 {
+	color: #f4d136;
+}
+
+.color4 {
+	color: #d0f436;
+}
+
+.color5 {
+	color: #74cb47;
+}
+
+.flex-1 {
+	flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+	.one {
+		display: none;
+	}
+}

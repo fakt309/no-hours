@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: DSDIGI;
+  src: url(/assets/fonts/DS-DIGI.TTF);
+}
+
+body {
+	margin: 0px;
+	font-family: Arial;
+	font-weight: 100;
+	overflow-x: hidden;
+	background-color: #000000;
+}
+
+
+::-webkit-scrollbar {
+  width: 30px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff99;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff99;
+}
