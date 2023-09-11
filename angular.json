@@ -39,8 +39,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            // /no-hours/
-            "baseHref": "/no-hours/",
             "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
